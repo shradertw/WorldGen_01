@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WorldGen</title>
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+  <header>
+    <input id="seed" type="text" spellcheck="false" aria-label="Seed">
+    <button id="go">Generate</button>
+    <button id="dice" title="Random seed" aria-label="Random seed">⚄</button>
+    <label><input id="shade" type="checkbox" checked> Shade</label>
+    <label><input id="rivers" type="checkbox" checked> Rivers</label>
+    <label><input id="water" type="checkbox" checked> Lakes</label>
+    <span id="info"></span>
+    <span id="build">v1</span>
+  </header>
+  <div id="bar"><div id="fill"></div></div>
+  <main>
+    <canvas id="map" width="1024" height="1024"></canvas>
+  </main>
+  <script type="module" src="src/view/main.js"></script>
+</body>
+</html>
